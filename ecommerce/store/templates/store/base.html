@@ -92,7 +92,14 @@
                         
                         </li>
                     
-        
+                            {% for categories in all_categories %}
+                            
+                            <li>
+                            
+                                <a class="dropdown-item" href=""> {{categories.name | capfirst}}</a>
+                            
+                            </li>
+                            {% endfor %}
                     
                     </ul>
 
