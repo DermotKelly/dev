@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # My third party apps
     'store.apps.StoreConfig', # App Store
+    'cart.apps.CartConfig', # App Shopping Cart
 ]
 
 MIDDLEWARE = [
@@ -64,6 +67,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'store.views.categories', # make available on every template and page
+                'cart.context_processors.cart',
+                
             ],
         },
     },
