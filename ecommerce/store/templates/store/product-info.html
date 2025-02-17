@@ -116,6 +116,8 @@
             },
             success: function(json){
 
+                document.getElementByID('cart-qty').textContent = json.qty
+
             },
 
             error: function(xhr, errmsg, err){
